@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -47,7 +47,6 @@
         <div id="lead-content">
             <h1>Ananya Goenka</h1>
             <br>
-            <a href="ananyagoenka.github.io/libs/Ananya_Goenka_Resume_final.pdf" download="ananya_goenka_resume.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
 
@@ -70,8 +69,12 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                       Hi! I am Ananya, a junior at Cornell University studying computer science. 
+                        Hi! I am Ananya, a senior at Cornell University studying computer science.
                     </p>
+                    <a href=" https://drive.google.com/file/d/12o50u-l3MLk3GDdS0aJ79uYWzTVtuAU1/view?usp=sharing"
+                        download>
+                        <p>View Resume</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -83,30 +86,69 @@
         <div class="container">
             <div class="row">
                 <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Hough Voting</h3>
-                        <p align= 'justify'>
-                        Performing Hough Transform for line detection
+                        <h3>Type Checker and Interpreter for System F</h3>
+                        <p align='justify'>
+                        <ul>
+                            <li> Built an OCaml-based type checker and interpreter for System F, with Menhir parser
+                                generator and QCheck property-based testing
+                            </li>
+                            <li> Engineered an automatic verification tool for Hoare-style annotated programs,
+                                integrating abstract interpretation, symbolic
+                                execution, and weakest precondition calculus; leveraged Z3 to discharge verification
+                                conditions and ensure partial correctness</li>
+                            <li>Explored the potential use of SMT solvers, automated theorem provers, and program
+                                analysis tools like SLAM, Boogie, and Dafny
+                                for enhanced verification capabilities and scalability</li>
+                        </ul>
                         </p>
-                        <a href="https://github.com/ananyagoenka/HoughVoting">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
-                <!-- End .project -->
-
                 <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
+                    <div class="project-info">
+                        <h3>Straato (Digital Asset Marketplace, won Best Startup Idea at the 2024 Cornell FinTech
+                            Payments Innovation Hackathon)</h3>
+                        <p align='justify'>
+                        <ul>
+                            <li> Engineered trading bot lambda functions by applying advanced methods for trade
+                                frequency, asset distribution, and price dynamics modulation, ensuring precise cycle
+                                resets and non-linear price adjustments for market simulation and strategic execution
+                            </li>
+                            <li>Integrated trading algorithms with AWS services using the boto3 library to fetch and
+                                process financial data from S3 buckets, manage EC2 instances for deployment, and
+                                interact with other AWS services for scalability and monitoring</li>
+                        </ul>
+                        </p>
                     </div>
-                    <!-- End .project-image -->
+                    <!-- End .project-info -->
+                </div>
+                <div class="project shadow-large">
+                    <div class="project-info">
+                        <h3>Microcredit Fin-Tech Application - Paise to Rupee</h3>
+                        <p align='justify'>
+                        <ul>
+                            <li> Studied loan delinquency parameters and preprocessed data using R's dplyr and ggplot2,
+                                employed caret's logistic regression and random forest models to predict loan
+                                eligibility, and evaluated model performance using accuracy, precision, recall, and AUC
+                            </li>
+                            <li>Built a loan eligibility mobile application using Android NDK and distributed among
+                                3000+ micro-loan seekers, resulting in 630 underwritten loans with a 94% collection rate
+                                to date and 45% decrease in customer acquisition costs for the microcredit firm</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <div class="project shadow-large">
                     <div class="project-info">
                         <h3>Feature Detection</h3>
-                        <p align= 'justify'>
-                        The objective is to develop code that can identify distinctive features in an image, which remain relatively unchanged despite translation, rotation, and illumination variations. These discerning features will then be utilized to establish correspondences with the most suitable matching features in another image. By achieving this, you will enable the stitching of multiple images together, ultimately creating a panoramic view.
+                        <p align='justify'>
+                            The objective is to develop code that can identify distinctive features in an image, which
+                            remain relatively unchanged despite translation, rotation, and illumination variations.
+                            These discerning features will then be utilized to establish correspondences with the most
+                            suitable matching features in another image. By achieving this, you will enable the
+                            stitching of multiple images together, ultimately creating a panoramic view.
                         </p>
                         <a href="https://github.com/ananyagoenka/FeatureDetection">View Project</a>
                     </div>
@@ -115,14 +157,18 @@
                 <!-- End .project -->
 
                 <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Computational Neural Network</h3>
-                        <p align= 'justify' >
-                        In my exploration of image classification, I delved into the realm of convolutional neural networks (CNNs). To begin, I meticulously constructed and trained a baseline model. With the goal of improving its performance, I proceeded to implement various data augmentation techniques. Taking it a step further, I crafted a customized model from scratch, aiming to surpass the capabilities of the baseline. To comprehensively understand the strengths and weaknesses of CNNs, I also generated adversarial examples, allowing me to scrutinize any potential shortcomings. This systematic approach provided invaluable insights into the application of CNNs in image classification tasks, furthering my understanding of this intricate field.
+                        <p align='justify'>
+                            In my exploration of image classification, I delved into the realm of convolutional neural
+                            networks (CNNs). To begin, I meticulously constructed and trained a baseline model. With the
+                            goal of improving its performance, I proceeded to implement various data augmentation
+                            techniques. Taking it a step further, I crafted a customized model from scratch, aiming to
+                            surpass the capabilities of the baseline. To comprehensively understand the strengths and
+                            weaknesses of CNNs, I also generated adversarial examples, allowing me to scrutinize any
+                            potential shortcomings. This systematic approach provided invaluable insights into the
+                            application of CNNs in image classification tasks, furthering my understanding of this
+                            intricate field.
                         </p>
                         <a href="https://github.com/ananyagoenka/CNN">View Project</a>
                     </div>
@@ -141,9 +187,12 @@
                 <h3>Lokal</h3>
                 <h4>Backend Software Engineering Intern</h4>
                 <p>
-                    •	Boosted URL click-through-rate by 80% by employing Firebase's Dynamic Links REST API to shorten URLs sent to users
-                    •	Automated collection, storage, and visualisation process of key Ad metrics using Google Ad Manager, Sheets and Data Studio API 
-                    •	Leveraged Knowledge in Django, REST API, Redis, PostgreSQL, SQL, Postman to test APIs, Jira and Git
+                    • Boosted URL click-through-rate by 80% by employing Firebase's Dynamic Links REST API to shorten
+                    URLs sent to users
+                    • Automated collection, storage, and visualisation process of key Ad metrics using Google Ad
+                    Manager, Sheets and Data Studio API
+                    • Leveraged Knowledge in Django, REST API, Redis, PostgreSQL, SQL, Postman to test APIs, Jira and
+                    Git
                 </p>
             </div>
 
@@ -151,9 +200,13 @@
                 <h3>Cover Technologies </h3>
                 <h4>Full-Stack Software Engineer Intern</h4>
                 <p>
-                    •	Optimised website usability through lazy loading techniques, and ensuring to adhere to responsive design and accessibility principles 
-                    •	Improved website's conversion rate by 30% by developing a reactive SPA web application that enables users to visually determine eligibility and total buildable area of a prospective Cover unit based on a given address and the Los Angeles County Zoning Code 
-                    •	Leveraged Knowledge in Vue.js, Pug.js, JavaScript, HTML5, CSS3, Webpack, Lodash, debugged using Chrome Dev Tools, and Git
+                    • Optimised website usability through lazy loading techniques, and ensuring to adhere to responsive
+                    design and accessibility principles
+                    • Improved website's conversion rate by 30% by developing a reactive SPA web application that
+                    enables users to visually determine eligibility and total buildable area of a prospective Cover unit
+                    based on a given address and the Los Angeles County Zoning Code
+                    • Leveraged Knowledge in Vue.js, Pug.js, JavaScript, HTML5, CSS3, Webpack, Lodash, debugged using
+                    Chrome Dev Tools, and Git
                 </p>
                 <a href="https://buildcover.com">View Website</a>
             </div>
@@ -162,10 +215,12 @@
                 <h3>Lendingkart</h3>
                 <h4>Software Engineer Intern</h4>
                 <p>
-                    •	Implemented a loan-eligibility form to preliminarily filter applicants as a first step of the end-to-end loan application checkout-flow
-                    •	Analysed delinquency rates of past loan disbursements and presented linear regression models to the credit underwriting team
-                    •	Leveraged Knowledge in HTML5, CSS3, Python3, used libraries including Pandas, NumPy, scikit-learn
-                                    </p>
+                    • Implemented a loan-eligibility form to preliminarily filter applicants as a first step of the
+                    end-to-end loan application checkout-flow
+                    • Analysed delinquency rates of past loan disbursements and presented linear regression models to
+                    the credit underwriting team
+                    • Leveraged Knowledge in HTML5, CSS3, Python3, used libraries including Pandas, NumPy, scikit-learn
+                </p>
             </div>
         </div>
     </div>
@@ -218,10 +273,12 @@
                 <div class="col-sm-5 social">
                     <ul>
                         <li>
-                            <a href="https://github.com/ananyagoenka" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://github.com/ananyagoenka" target="_blank"><i class="fa fa-github"
+                                    aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="www.linkedin.com/in/ananya-goenka " target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="www.linkedin.com/in/ananya-goenka " target="_blank"><i class="fa fa-linkedin"
+                                    aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
