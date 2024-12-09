@@ -16,10 +16,12 @@
         }
 
         header {
-            background: #6c63ff;
+            background: #004080;
+            /* Navy blue */
             color: #fff;
             padding: 1.5rem 0;
             text-align: center;
+            position: relative;
         }
 
         header h1 {
@@ -32,6 +34,22 @@
             margin-top: 0.5rem;
         }
 
+        .social-icons {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+
+        .social-icons a {
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
         nav {
             text-align: center;
             margin: 1rem 0;
@@ -40,7 +58,8 @@
         nav a {
             margin: 0 1rem;
             text-decoration: none;
-            color: #6c63ff;
+            color: #004080;
+            /* Navy blue */
             font-weight: bold;
         }
 
@@ -59,7 +78,8 @@
         }
 
         section h2 {
-            border-bottom: 2px solid #6c63ff;
+            border-bottom: 2px solid #004080;
+            /* Navy blue */
             padding-bottom: 0.5rem;
             margin-bottom: 1rem;
         }
@@ -70,7 +90,8 @@
         }
 
         footer {
-            background: #333;
+            background: #004080;
+            /* Navy blue */
             color: #fff;
             text-align: center;
             padding: 1rem 0;
@@ -79,13 +100,23 @@
         footer p {
             margin: 0;
         }
+
+        a {
+            color: #004080;
+            /* Navy blue */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Ananya's Portfolio</h1>
-        <p>B.A. in Computer Science with a passion for distributed systems, machine learning, and financial empowerment.
+        <h1>Ananya's Wiki</h1>
+        <p>Excited about the intersection of formal methods, hardware design, and programming language theory
         </p>
     </header>
     <nav>
@@ -93,16 +124,29 @@
         <a href="#education">Education</a>
         <a href="#projects">Projects</a>
         <a href="#research">Research</a>
-        <a href="#contact">Contact</a>
+
+        <div class="social-icons">
+            <a href="mailto:aag237@cornell.edu" title="Email">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon">
+            </a>
+            <a href="https://www.linkedin.com/in/ananya-goenka" target="_blank" title="LinkedIn">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Icon">
+            </a>
+            <a href="https://github.com/ananyagoenka" target="_blank" title="GitHub">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub Icon">
+            </a>
+        </div>
     </nav>
     <div class="container">
         <section id="about">
             <h2>About Me</h2>
             <p>
-                I'm a final-year Computer Science student at Cornell University with a minor in Data Science and
-                Business. I thrive at the intersection of research, software engineering, and innovation.
-                My technical journey spans building scalable systems, formal verification, and mentoring through
-                teaching and outreach programs.
+                I am a final-year Computer Science student at Cornell University, where I combine my passion for
+                programming language theory, hardware design, and distributed systems to explore questions at the
+                intersection of software and hardware. My academic journey has been shaped by research experiences
+                in formal verification, machine learning theory, and fairness in computational systems. I thrive
+                on interdisciplinary challenges, designing scalable solutions that bridge abstract principles and
+                real-world applications.
             </p>
         </section>
         <section id="education">
@@ -118,23 +162,23 @@
             <div class="project">
                 <h3>Type Checker and Interpreter for System F</h3>
                 <p>Built an OCaml-based type checker and interpreter for System F, with Menhir parser generator and
-                    QCheck property-based testing. Developed an automatic verification tool for Hoare-style annotated
-                    programs, leveraging Z3 for partial correctness.</p>
+                    QCheck
+                    property-based testing. Developed an automatic verification tool for Hoare-style annotated programs,
+                    leveraging Z3 for partial correctness.</p>
             </div>
             <div class="project">
                 <h3>Straato - Digital Asset Marketplace</h3>
                 <p>Collaborated on trading bot algorithms and integrated AWS services to scale financial data
-                    processing. Won Best Startup Idea at the 2024 Cornell FinTech Hackathon.
-                    <a href="https://www.straato.com/" target="_blank"
-                        style="color: #6c63ff; font-weight: normal;">Explore
-                        Straato
-                    </a>
+                    processing.
+                    Won Best Startup Idea at the 2024 Cornell FinTech Hackathon.
+                    <a href="https://www.straato.com/" target="_blank">Explore Straato</a>
                 </p>
             </div>
             <div class="project">
                 <h3>Microcredit Fin-Tech Application (Paise to Rupee)</h3>
                 <p>Developed a mobile app using Android NDK for micro-loan seekers, enabling 630 underwritten loans with
-                    a 94% collection rate. Integrated logistic regression and random forest models to assess loan
+                    a
+                    94% collection rate. Integrated logistic regression and random forest models to assess loan
                     eligibility.</p>
             </div>
             <div class="project">
@@ -143,15 +187,13 @@
                 <p>
                     Led the development of an embedded bird call match filter, implementing FFT-based signal processing
                     pipeline and noise reduction algorithms to enable reliable species identification under
-                    environmental interference and strict power/compute constraints for Cornell's Lab of Ornithology.
+                    environmental
+                    interference and strict power/compute constraints for Cornell's Lab of Ornithology.
                 </p>
                 <p>
                     Collaborated with project leads to create hands-on embedded systems curriculum for new members,
                     developing practical exercises in C, Verilog, and Arduino.
-                    Conducted weekly technical sessions teaching digital design fundamentals and microcontroller
-                    programming through FPGA projects and real-time signal processing implementations.
-                    <a href="https://c2s2.engineering.cornell.edu" target="_blank"
-                        style="color: #6c63ff; font-weight: normal;">Explore C2S2</a>
+                    <a href="https://c2s2.engineering.cornell.edu" target="_blank">Explore C2S2</a>
                 </p>
             </div>
         </section>
@@ -161,11 +203,10 @@
                 <h3>Prof. Adrian Sampson's CAPRA Lab </h3>
                 <p><em>Cornell University | July 2024 - Present</em></p>
                 <p>Mentored by PhD student Rachit Nigam, developing formal verification frameworks using Alloy to model
-                    memory consistency models (MCMs).
-                    Focused on producer-consumer synchronization, stage transitions, and declarative specifications for
-                    buffet storage systems.
-                    <a href="https://capra.cs.cornell.edu" target="_blank"
-                        style="color: #6c63ff; font-weight: normal;">Explore CAPRA</a>
+                    memory consistency models (MCMs). Focused on producer-consumer synchronization, stage transitions,
+                    and
+                    declarative specifications for buffet storage systems.
+                    <a href="https://capra.cs.cornell.edu" target="_blank">Explore CAPRA</a>
                 </p>
             </div>
             <div class="experience">
@@ -174,8 +215,8 @@
                 <p>Researched hedonic game theoretic resource allocation models for federated learning. Simulated
                     multiplayer federated learning experiments to evaluate fairness-utility trade-offs and adversarial
                     threat scenarios.
-                    <a href="documents/Game_Theoretic_Experiments_with_Federated_Learning_Kate Donahue_and Ananya Goenka.pdf"
-                        target=" _blank" style="color: #6c63ff; font-weight: normal;">Read More</a>
+                    <a href="documents/Game_Theoretic_Experiments_with_Federated_Learning_Kate_Donohue_Ananya_Goenka.pdf"
+                        target="_blank">Read More</a>
                 </p>
             </div>
             <div class="experience">
@@ -186,13 +227,6 @@
                     cover letters.</p>
             </div>
         </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p> <a href="mailto:aag237@cornell.edu"> Email Me </a></p>
-            <p><a href="https://www.linkedin.com/in/ananya-goenka" target="_blank">LinkedIn</a>
-            </p>
-            <p><a href="https://github.com/ananyagoenka" target="_blank">Github</a></p>
-        </section>
     </div>
     <footer>
         <p>© 2024 Ananya. All rights reserved.</p>
@@ -200,7 +234,3 @@
 </body>
 
 </html>
-
-
-EDUCATION
-__
