@@ -124,7 +124,7 @@
         <a href="#education">Education</a>
         <a href="#projects">Projects</a>
         <a href="#research">Research</a>
-        <a href="documents/Ananya_Goenka_CV.pdf" target="_blank">CV</a>
+        <!-- <a href="documents/Ananya_Goenka_CV.pdf" target="_blank">CV</a> -->
 
         <div class="social-icons">
             <a href="mailto:aag237@cornell.edu" title="Email">
@@ -162,6 +162,21 @@
         </section>
         <section id="projects">
             <h2>Projects</h2>
+            <div class="project">
+                <h3>Compiler Speculative Optimization for Bril Intermediate Representation</h3>
+                <p>Designed a profile-guided optimization framework for Bril, dynamically extracting execution traces
+                    and injecting fast paths using speculative guards and commits for runtime performance gains.
+                    Leveraged LLVM-inspired optimization techniques to eliminate redundant operations within traces,
+                    ensuring correctness through equivalence tests and instruction count analysis.</p>
+            </div>
+
+            <div class="project">
+                <h3>Static Analysis and SSA Transformations for Compiler Optimization</h3>
+                <p>Developed a comprehensive data flow analysis framework, implementing dominance frontier computation
+                    and SSA transformations to enable advanced compiler optimizations. Created and validated dead code
+                    elimination and local value numbering passes, ensuring correctness and reliability through the Turnt
+                    testing framework and benchmark evaluation.</p>
+            </div>
             <div class="project">
                 <h3>Type Checker and Interpreter for System F</h3>
                 <p>Built an OCaml-based type checker and interpreter for System F, with Menhir parser generator and
